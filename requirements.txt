@@ -1,0 +1,14 @@
+Name: torch
+Version: 2.15.0+cu132
+Name: torchvision
+Version: 0.29.2+cu132
+Name: numpy
+Version: 2.5.5
+Name: pandas
+Version: 3.1.1
+Name: opencv-python
+Version: 5.1.0.95
+Name: matplotlib
+Version: 3.11.2
+Name: tqdm
+Version: 4.70.1

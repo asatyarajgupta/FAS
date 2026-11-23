@@ -3,7 +3,7 @@ import numpy as np, pandas as pd, cv2, torch
 
 SEED = 0
 IMG_SIZE, FILL = 128, 127
-CACHE = os.environ.get('PAD_CACHE', r'C:\Code\cache')     # arrays + weights (NOT committed)
+CACHE = os.environ.get('PAD_CACHE', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cache'))
 RESULTS = os.environ.get('PAD_RESULTS', 'results')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 

@@ -84,3 +84,25 @@ def run_damage(scorer, thr, sets, chunk=1000):
                              CRI=(acer - base) / (0.5 - base)))
             print(f'[damage] {set_name} | {name}: ACER {acer:.4f} ({time.time()-t:.0f}s)', flush=True)
     return pd.DataFrame(rows)
+
+import json, sys
+class _Tee:
+    def __init__(self, *s): self.s = s
+    def write(self, d): [x.write(d) or x.flush() for x in self.s]
+    def flush(self): [x.flush() for x in self.s]
+def start_log(name):
+    os.makedirs('logs', exist_ok=True)
+    sys.stdout = _Tee(sys.__stdout__, open(f'logs/{name}.log', 'w', encoding='utf-8'))
+
+def summarize(tag, scorer, thr, D):
+    out = {'tag': tag, 'threshold': thr}
+    for nm, key in (('within-split', 'within'), ('unseen test', 'test')):
+        s = scorer(D[key]['X']); y = D[key]['y']
+        a, b, acer = error_rates(s, y, thr)
+        out[nm] = dict(APCER=a, BPCER=b, ACER=acer)
+        np.save(f'{CACHE}/{tag}_scores_{key}.npy', s)
+        if key == 'test':
+            out['oracle_ACER_unseen'] = error_rates(s, y, eer_threshold(s, y))[2]
+    os.makedirs(RESULTS, exist_ok=True)
+    json.dump(out, open(f'{RESULTS}/{tag}_summary.json', 'w'), indent=2)
+    print('[summary]', json.dumps(out), flush=True)

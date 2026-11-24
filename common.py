@@ -106,3 +106,4 @@ def summarize(tag, scorer, thr, D):
     os.makedirs(RESULTS, exist_ok=True)
     json.dump(out, open(f'{RESULTS}/{tag}_summary.json', 'w'), indent=2)
     print('[summary]', json.dumps(out), flush=True)
+    return out

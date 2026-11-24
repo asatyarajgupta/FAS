@@ -1,0 +1,10 @@
+model,deleted_by,5%,10%,20%,30%,50%,mean
+resnet18_seed0,trained-model map,0.098,0.172,0.292,0.386,0.449,0.279
+resnet18_seed0,random-weights map,0.034,0.068,0.132,0.212,0.388,0.167
+resnet18_seed0,random pixels,-0.005,-0.032,-0.036,-0.037,0.001,-0.022
+cdcn_seed0,trained-model map,0.006,0.006,0.005,0.005,0.005,0.005
+cdcn_seed0,random-weights map,-0.001,-0.002,-0.003,-0.004,-0.007,-0.003
+cdcn_seed0,random pixels,-0.005,-0.008,-0.01,-0.011,-0.009,-0.009
+cdcn_mse_seed0,trained-model map,-0.013,-0.018,-0.022,-0.017,0.023,-0.009
+cdcn_mse_seed0,random-weights map,-0.249,-0.422,-0.619,-0.72,-0.808,-0.564
+cdcn_mse_seed0,random pixels,-1.067,-1.192,-1.091,-1.013,-0.958,-1.064

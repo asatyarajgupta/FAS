@@ -1,0 +1,8 @@
+[seed] 0 | device cuda | torch 2.15.0+cu132
+epoch 1: train loss 0.3554 | val ACER 0.0968
+epoch 2: train loss 0.1999 | val ACER 0.0755
+epoch 3: train loss 0.1262 | val ACER 0.1040
+epoch 4: train loss 0.0990 | val ACER 0.0802
+epoch 5: train loss 0.0730 | val ACER 0.0595
+epoch 6: train loss 0.0595 | val ACER 0.0755
+[summary] {"tag": "resnet18_scratch_seed0", "threshold": 0.6022075495123863, "within-split": {"APCER": 0.0905463474524248, "BPCER": 0.06601764526924248, "ACER": 0.07828199636083363}, "unseen test": {"APCER": 0.4755801104972376, "BPCER": 0.07518401682439538, "ACER": 0.27538206366081647}, "oracle_ACER_unseen": 0.23012769344278483}

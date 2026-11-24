@@ -1,0 +1,57 @@
+[seed] 0 | device cuda | torch 2.15.0+cu132
+[summary] {"tag": "resnet18_seed0", "threshold": 0.3152479755878451, "within-split": {"APCER": 0.04143646408839779, "BPCER": 0.02251292972315181, "ACER": 0.0319746969057748}, "unseen test": {"APCER": 0.35027624309392263, "BPCER": 0.02444794952681388, "ACER": 0.18736209631036826}, "oracle_ACER_unseen": 0.14627202537602174}
+[damage] within-split | ref unmodified: ACER 0.0320 (2s)
+[damage] within-split | I0 re-encode: ACER 0.0431 (4s)
+[damage] within-split | I1 low-pass: ACER 0.0960 (3s)
+[damage] within-split | I2 grayscale: ACER 0.0788 (3s)
+[damage] within-split | I3 defocus: ACER 0.1048 (3s)
+[damage] within-split | I4 background removed: ACER 0.0844 (2s)
+[damage] within-split | I5 face removed: ACER 0.1250 (2s)
+[damage] unseen test | ref unmodified: ACER 0.1874 (2s)
+[damage] unseen test | I0 re-encode: ACER 0.2264 (4s)
+[damage] unseen test | I1 low-pass: ACER 0.2822 (2s)
+[damage] unseen test | I2 grayscale: ACER 0.2143 (3s)
+[damage] unseen test | I3 defocus: ACER 0.3164 (2s)
+[damage] unseen test | I4 background removed: ACER 0.2544 (2s)
+[damage] unseen test | I5 face removed: ACER 0.2742 (2s)
+[summary] {"tag": "resnet18_seed1", "threshold": 0.7213293461799637, "within-split": {"APCER": 0.02532228360957643, "BPCER": 0.022208700943109217, "ACER": 0.023765492276342823}, "unseen test": {"APCER": 0.3695027624309392, "BPCER": 0.029705573080967402, "ACER": 0.1996041677559533}, "oracle_ACER_unseen": 0.15452463530683025}
+[summary] {"tag": "resnet18_seed2", "threshold": 0.9302257733345032, "within-split": {"APCER": 0.027317372621240024, "BPCER": 0.014907210222087009, "ACER": 0.021112291421663515}, "unseen test": {"APCER": 0.4285082872928177, "BPCER": 0.02260778128286015, "ACER": 0.22555803428783894}, "oracle_ACER_unseen": 0.161940934520801}
+[summary] {"tag": "resnet18_scratch_seed0", "threshold": 0.6022075495123863, "within-split": {"APCER": 0.0905463474524248, "BPCER": 0.06601764526924248, "ACER": 0.07828199636083363}, "unseen test": {"APCER": 0.4755801104972376, "BPCER": 0.07518401682439538, "ACER": 0.27538206366081647}, "oracle_ACER_unseen": 0.23012769344278483}
+[summary] {"tag": "cdcn_seed0", "threshold": 0.30868989902734756, "within-split": {"APCER": 0.17694904849600981, "BPCER": 0.18923030118649226, "ACER": 0.18308967484125105}, "unseen test": {"APCER": 0.510939226519337, "BPCER": 0.22607781282860148, "ACER": 0.36850851967396925}, "oracle_ACER_unseen": 0.3781142269550517}
+[damage] within-split | ref unmodified: ACER 0.1831 (48s)
+[damage] within-split | I0 re-encode: ACER 0.1858 (52s)
+[damage] within-split | I1 low-pass: ACER 0.2481 (49s)
+[damage] within-split | I2 grayscale: ACER 0.3582 (49s)
+[damage] within-split | I3 defocus: ACER 0.2468 (49s)
+[damage] within-split | I4 background removed: ACER 0.5000 (48s)
+[damage] within-split | I5 face removed: ACER 0.1845 (48s)
+[damage] unseen test | ref unmodified: ACER 0.3685 (41s)
+[damage] unseen test | I0 re-encode: ACER 0.3733 (44s)
+[damage] unseen test | I1 low-pass: ACER 0.4066 (43s)
+[damage] unseen test | I2 grayscale: ACER 0.4501 (44s)
+[damage] unseen test | I3 defocus: ACER 0.4094 (43s)
+[damage] unseen test | I4 background removed: ACER 0.5001 (43s)
+[damage] unseen test | I5 face removed: ACER 0.3725 (43s)
+[summary] {"tag": "cdcn_mse_seed0", "threshold": 0.7219626182317734, "within-split": {"APCER": 0.014579496623695518, "BPCER": 0.009126863401277762, "ACER": 0.01185318001248664}, "unseen test": {"APCER": 0.2870718232044199, "BPCER": 0.0013144058885383807, "ACER": 0.14419311454647912}, "oracle_ACER_unseen": 0.05188159018422016}
+[damage] within-split | ref unmodified: ACER 0.0119 (51s)
+[damage] within-split | I0 re-encode: ACER 0.1763 (52s)
+[damage] within-split | I1 low-pass: ACER 0.5000 (50s)
+[damage] within-split | I2 grayscale: ACER 0.1868 (51s)
+[damage] within-split | I3 defocus: ACER 0.4997 (50s)
+[damage] within-split | I4 background removed: ACER 0.0461 (49s)
+[damage] within-split | I5 face removed: ACER 0.2990 (50s)
+[damage] unseen test | ref unmodified: ACER 0.1442 (42s)
+[damage] unseen test | I0 re-encode: ACER 0.3454 (44s)
+[damage] unseen test | I1 low-pass: ACER 0.5000 (42s)
+[damage] unseen test | I2 grayscale: ACER 0.2323 (43s)
+[damage] unseen test | I3 defocus: ACER 0.4995 (42s)
+[damage] unseen test | I4 background removed: ACER 0.2471 (42s)
+[damage] unseen test | I5 face removed: ACER 0.1754 (42s)
+                 model  within_ACER  within_APCER  within_BPCER  unseen_ACER  unseen_APCER  unseen_BPCER  gap_ratio  unseen_ACER_oracle  calibration_share
+        resnet18_seed0       0.0320        0.0414        0.0225       0.1874        0.3503        0.0244     5.8597              0.1463             0.2644
+        resnet18_seed1       0.0238        0.0253        0.0222       0.1996        0.3695        0.0297     8.3989              0.1545             0.2564
+        resnet18_seed2       0.0211        0.0273        0.0149       0.2256        0.4285        0.0226    10.6837              0.1619             0.3112
+resnet18_scratch_seed0       0.0783        0.0905        0.0660       0.2754        0.4756        0.0752     3.5178              0.2301             0.2296
+            cdcn_seed0       0.1831        0.1769        0.1892       0.3685        0.5109        0.2261     2.0127              0.3781            -0.0518
+        cdcn_mse_seed0       0.0119        0.0146        0.0091       0.1442        0.2871        0.0013    12.1649              0.0519             0.6975
+[done] results written to results

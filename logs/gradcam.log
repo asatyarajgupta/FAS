@@ -1,0 +1,31 @@
+[seed] 0 | device cuda | torch 2.15.0+cu132
+resnet18_seed0 done
+resnet18_seed0 (random) done
+cdcn_seed0 done
+cdcn_seed0 (random) done
+cdcn_mse_seed0 done
+cdcn_mse_seed0 (random) done
+                  model images  face  margin  background  face_area  margin_area  bg_area
+         resnet18_seed0   live 0.451   0.466       0.083       0.40        0.488    0.112
+         resnet18_seed0  spoof 0.391   0.497       0.112       0.42        0.476    0.104
+resnet18_seed0 (random)   live 0.371   0.504       0.125       0.40        0.488    0.112
+resnet18_seed0 (random)  spoof 0.393   0.492       0.115       0.42        0.476    0.104
+             cdcn_seed0   live 0.364   0.420       0.217       0.40        0.488    0.112
+             cdcn_seed0  spoof 0.377   0.414       0.209       0.42        0.476    0.104
+    cdcn_seed0 (random)   live 0.424   0.540       0.036       0.40        0.488    0.112
+    cdcn_seed0 (random)  spoof 0.455   0.512       0.033       0.42        0.476    0.104
+         cdcn_mse_seed0   live 0.363   0.514       0.123       0.40        0.488    0.112
+         cdcn_mse_seed0  spoof 0.422   0.474       0.104       0.42        0.476    0.104
+cdcn_mse_seed0 (random)   live 0.424   0.540       0.036       0.40        0.488    0.112
+cdcn_mse_seed0 (random)  spoof 0.455   0.512       0.033       0.42        0.476    0.104
+         model         deleted_by     5%    10%    20%    30%    50%   mean
+resnet18_seed0  trained-model map  0.098  0.172  0.292  0.386  0.449  0.279
+resnet18_seed0 random-weights map  0.034  0.068  0.132  0.212  0.388  0.167
+resnet18_seed0      random pixels -0.005 -0.032 -0.036 -0.037  0.001 -0.022
+    cdcn_seed0  trained-model map  0.006  0.006  0.005  0.005  0.005  0.005
+    cdcn_seed0 random-weights map -0.001 -0.002 -0.003 -0.004 -0.007 -0.003
+    cdcn_seed0      random pixels -0.005 -0.008 -0.010 -0.011 -0.009 -0.009
+cdcn_mse_seed0  trained-model map -0.013 -0.018 -0.022 -0.017  0.023 -0.009
+cdcn_mse_seed0 random-weights map -0.249 -0.422 -0.619 -0.720 -0.808 -0.564
+cdcn_mse_seed0      random pixels -1.067 -1.192 -1.091 -1.013 -0.958 -1.064
+[done]

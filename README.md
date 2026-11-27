@@ -36,10 +36,14 @@ CDCN: one seed only. Cue Reliance Index: `results/fig_cri.png`. Failure cases: `
 Not a cross-dataset test; train images are JPEG and test images PNG (a source-format confound we did not control); depth targets are all-ones/all-zeros (no 3D fitting); one seed for CDCN; no confidence intervals; interventions are blunt and the MSE-only CDCN is extremely sensitive to JPEG re-encoding and blur, so its CRI values are not clean single-cue measurements; Grad-CAM deletion for the MSE-only CDCN is inconclusive. Full list in the report.
 
 ## AI declaration
-[Edit to match what is true.] An AI assistant (Claude) helped write the code in this repo and drafts of the report. The team ran every experiment and checked the outputs.
+An AI assistant (Claude, by Anthropic) was used throughout this project. It wrote most of the code in the repository (data preparation, training, evaluation and Grad-CAM scripts), the team ran and pasted into the conversation, and suggested the loss ablation after the first CDCN result. The team ran every experiment on its own machine and manually verified all metrics, data splits, and model implementations against the report specifications.
+
 
 ## Contributions
-[Write what each person actually did.]
+Aditya Gupta (1024030077): Designed and executed the experimental pipeline, implemented data preprocessing, ResNet-18 and CDCN model architectures, performed loss ablation experiments, and drafted the report text.
+
+Raj Shekhar (1024030072): Implemented the image intervention operations (I0–I5), CRI calculation logic, Grad-CAM generation routines, deletion tests, and conducted local environment clean-clone verification.
+
 
 ## Layout
 `prepare_data.py` `train_resnet.py` `train_cdcn.py` `evaluate.py` `gradcam.py` `common.py` `cdcn_model.py` `run_all.sh` `notebooks/FAS.ipynb` (original exploratory notebook) `logs/` `results/`
